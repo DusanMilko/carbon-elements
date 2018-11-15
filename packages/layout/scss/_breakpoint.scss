@@ -45,9 +45,9 @@ $smallest-breakpoint: nth(map-keys($breakpoints), 1);
 @function get-min-breakpoint() {
   @return map-merge(
     (
-      name: sm,
+      name: $smallest-breakpoint,
     ),
-    map-get($breakpoints, sm)
+    map-get($breakpoints, $smallest-breakpoint)
   );
 }
 
